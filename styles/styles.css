@@ -31,3 +31,21 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+
+/* NAV */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+/* NAV LINKS */
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+/* H1 */
+h1 {
+    color: #333;
+}
