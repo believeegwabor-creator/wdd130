@@ -31,7 +31,7 @@ footer {
 /* HEADER */
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--accent2-color);
     padding: 10px;
 }
 
@@ -41,7 +41,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: var(--accent2-color);
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -61,6 +61,11 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+/* SECTIONS (uses secondary color ✅) */
+section {
+    background-color: var(--secondary-color);
 }
 
 /* HERO */
