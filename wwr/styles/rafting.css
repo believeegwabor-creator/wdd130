@@ -21,8 +21,8 @@ header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    background: var(--secondary-color);
     padding: 10px;
+    background: var(--secondary-color);
 }
 
 header img {
