@@ -2,27 +2,28 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="Contact NEXORA Rafting">
+<meta name="description" content="Contact NEXORA Rafting for inquiries, reservations, and support. Reach us for your next adventure.">
+<meta name="author" content="Believe Egwabor">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | NEXORA</title>
+<title>Contact Us | NEXORA Rafting</title>
 <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
 <header>
-  <h1>NEXORA Rafting</h1>
+  <img src="images/logo.png" alt="NEXORA Logo">
   <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <a href="about.html">About Us</a>
     <a href="trips.html">Trips</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html">Contact Us</a>
   </nav>
 </header>
 
 <main>
 
-<h2>Contact Us</h2>
+<h1>Contact Us - NEXORA Rafting</h1>
 
 <!-- COMPANY INFO -->
 <section>
@@ -42,44 +43,55 @@
 <!-- EMPLOYEES -->
 <section class="grid">
   <div>
-    <img src="images/employee1.png">
+    <img src="images/employee1.png" alt="General Manager">
     <p>John – General Manager</p>
   </div>
 
   <div>
-    <img src="images/employee2.png">
+    <img src="images/employee2.png" alt="Customer Support">
     <p>Mike – Customer Support</p>
   </div>
 
   <div>
-    <img src="images/employee3.png">
+    <img src="images/employee3.png" alt="Lead Guide">
     <p>Sarah – Lead Guide</p>
   </div>
 </section>
 
 <!-- FORM -->
 <section>
-  <h3>Send Us a Message</h3>
+  <h2>Send Us a Message</h2>
 
   <form>
 
-    <label>Name:</label><br>
-    <input type="text" required><br><br>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
 
-    <label>Email:</label><br>
-    <input type="email" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
 
     <p>Purpose of Message:</p>
 
-    <label><input type="radio" name="purpose" required> General Inquiry</label><br>
-    <label><input type="radio" name="purpose"> Reservation Question</label><br>
-    <label><input type="radio" name="purpose"> Website Suggestion</label><br><br>
+    <label for="general">
+      <input type="radio" id="general" name="purpose" value="general" required>
+      General Inquiry
+    </label><br>
 
-    <label>Message:</label><br>
-    <textarea rows="5" required></textarea><br><br>
+    <label for="reservation">
+      <input type="radio" id="reservation" name="purpose" value="reservation">
+      Reservation Question
+    </label><br>
 
-    <label>
-      <input type="checkbox">
+    <label for="suggestion">
+      <input type="radio" id="suggestion" name="purpose" value="suggestion">
+      Website Suggestion
+    </label><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+    <label for="subscribe">
+      <input type="checkbox" id="subscribe" name="subscribe">
       Please subscribe me to the monthly newsletter
     </label><br><br>
 
@@ -92,7 +104,13 @@
 </main>
 
 <footer>
-  <p>© 2026 NEXORA</p>
+  <p>© 2026 NEXORA | Believe Egwabor</p>
+
+  <nav class="socialmedia">
+    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+  </nav>
 </footer>
 
 </body>
