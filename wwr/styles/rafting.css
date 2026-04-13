@@ -1,57 +1,50 @@
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   margin: 0;
 }
 
 header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 20px;
   background: #003366;
   color: white;
+  padding: 15px;
+}
+
+header img {
+  width: 60px;
 }
 
 nav a {
   margin: 10px;
   color: white;
   text-decoration: none;
-}
-
-.hero {
-  position: relative;
-}
-
-.hero img {
-  width: 100%;
-}
-
-.hero h2 {
-  position: absolute;
-  top: 40%;
-  left: 30%;
-  color: white;
+  font-weight: bold;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
   padding: 20px;
 }
 
-.trips-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  padding: 20px;
+.grid img {
+  width: 100%;
+  border-radius: 8px;
 }
 
-.cta {
-  text-align: center;
+form {
   padding: 20px;
+  background: #f4f4f4;
+  margin: 20px;
+  border-radius: 8px;
 }
 
-.newsletter {
-  text-align: center;
-  padding: 20px;
+button {
+  background: #003366;
+  color: white;
+  padding: 10px 20px;
+  border: none;
 }
