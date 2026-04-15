@@ -24,14 +24,14 @@ nav a {
   font-weight: bold;
 }
 
-/* GENERAL IMAGES (BASE CONTROL) */
+/* IMAGES */
 img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-/* HERO IMAGE (HOME PAGE) */
+/* HERO */
 .hero {
   position: relative;
 }
@@ -52,7 +52,7 @@ img {
   padding: 10px;
 }
 
-/* GRID (INDEX, ABOUT, TRIPS) */
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -61,12 +61,11 @@ img {
 }
 
 .grid img {
-  width: 100%;
   height: 200px;
-  object-fit: cover; /* keeps size consistent */
+  object-fit: cover;
 }
 
-/* EMPLOYEES (CONTACT PAGE - NO CUTTING) */
+/* EMPLOYEES */
 .employees {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -75,8 +74,7 @@ img {
 }
 
 .employees img {
-  width: 100%;
-  height: auto; /* IMPORTANT: no cutting */
+  height: auto;
 }
 
 /* FORM */
@@ -89,14 +87,30 @@ form {
 
 input, textarea, button {
   padding: 10px;
-  font-size: 16px;
 }
 
 button {
   background: #003366;
   color: white;
   border: none;
-  cursor: pointer;
+}
+
+/* TABLE */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #003366;
+  color: white;
 }
 
 /* FOOTER */
@@ -109,5 +123,4 @@ footer {
 
 .socialmedia img {
   width: 30px;
-  margin: 5px;
 }
