@@ -113,3 +113,15 @@ footer {
     width: 32px;
     margin-left: 10px;
 }
+
+header {
+    background-color: var(--secondary-color);
+}
+
+.hero article {
+    background-color: var(--accent2-color);
+}
+
+footer {
+    background-color: var(--accent1-color);
+}
