@@ -1,4 +1,10 @@
-```css * {
+:root {
+    --primary-color: #0b4f6c;
+    --secondary-color: #ffffff;
+    --text-color: #333333;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +12,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: var(--text-color);
 }
 
 /* HEADER */
@@ -16,25 +22,29 @@ header {
     grid-template-columns: 200px 1fr;
     align-items: center;
     padding: 20px;
-    background-color: #0b4f6c;
+    background-color: var(--primary-color);
 }
 
 header img {
     width: 120px;
 }
 
-nav {
+/* NAVIGATION */
+
+nav ul {
     display: flex;
     justify-content: space-evenly;
+    list-style: none;
 }
 
 nav a {
-    color: white;
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
+    padding: 10px;
 }
 
-/* HERO */
+/* HERO SECTION */
 
 .hero {
     position: relative;
@@ -50,7 +60,7 @@ nav a {
     top: 20px;
     width: 100%;
     text-align: center;
-    color: white;
+    color: var(--secondary-color);
     background-color: rgba(0, 0, 0, 0.5);
     padding: 15px;
 }
@@ -70,7 +80,7 @@ nav a {
     margin-left: 15px;
 }
 
-/* HISTORY */
+/* HISTORY SECTION */
 
 .history {
     padding: 40px;
@@ -92,7 +102,7 @@ nav a {
     width: 100%;
 }
 
-/* ADVENTURES */
+/* ADVENTURE SECTION */
 
 .adventures {
     padding: 40px;
@@ -107,6 +117,7 @@ nav a {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .adventure-gallery figure {
@@ -114,8 +125,8 @@ nav a {
 }
 
 .adventure-gallery img {
-    width: 100%;
-    max-width: 180px;
+    width: 180px;
+    height: auto;
 }
 
 /* FOOTER */
@@ -125,17 +136,19 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #0b4f6c;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
-.sociallinks {
+.socialmedia {
     display: flex;
     gap: 10px;
 }
 
-.sociallinks img {
-    width: 35px;
+.socialmedia a {
+    text-decoration: none;
 }
 
-```
+.socialmedia img {
+    width: 35px;
+}
