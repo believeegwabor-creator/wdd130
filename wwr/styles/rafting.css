@@ -91,12 +91,18 @@ button:hover {
     opacity: 0.9;
 }
 
-.sociallinks img {
-    width: 25px;
+header img {
+    width: 120px;
     height: auto;
 }
 
-header img {
-    width: 120px;
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socialmedia img {
+    width: 30px;
     height: auto;
 }
