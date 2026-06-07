@@ -13,12 +13,14 @@
 </head>
 
 <body>
+
     <header>
         <img src="images/logo.jpg" alt="White Water Rafting Logo">
 
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
@@ -26,7 +28,7 @@
     <main>
 
         <section class="contact-info">
-            <h1>Contact Us</h1>
+            <h1>White Water Rafting Contact Us</h1>
 
             <p><strong>Address:</strong> 123 River Road, Rapids City, Idaho</p>
             <p><strong>Phone:</strong> (208) 555-1234</p>
@@ -40,17 +42,17 @@
             <h2>Meet Our Team</h2>
 
             <figure>
-                <img src="images/employee1.jpg" alt="River Guide">
+                <img src="images/employee1.jpg" alt="John Smith General Manager">
                 <figcaption>John Smith - General Manager</figcaption>
             </figure>
 
             <figure>
-                <img src="images/employee2.jpg" alt="Trip Coordinator">
+                <img src="images/employee2.jpg" alt="Sarah Jones Trip Coordinator">
                 <figcaption>Sarah Jones - Trip Coordinator</figcaption>
             </figure>
 
             <figure>
-                <img src="images/employee3.jpg" alt="River Guide">
+                <img src="images/employee3.jpg" alt="Mike Brown River Guide">
                 <figcaption>Mike Brown - River Guide</figcaption>
             </figure>
         </section>
@@ -69,27 +71,21 @@
                 <fieldset>
                     <legend>Purpose of Message</legend>
 
-                    <label>
-                        <input type="radio" name="purpose" value="general" required>
-                        General Inquiry
-                    </label>
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="suggestion">
-                        Website Suggestion
-                    </label>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
                 </fieldset>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="6" required></textarea>
 
-                <label>
-                    <input type="checkbox" name="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">
                     Please subscribe me to the monthly newsletter
                 </label>
 
@@ -103,17 +99,17 @@
     <footer>
         <p>&copy; 2026 White Water Rafting | Believe Egwabor</p>
 
-        <nav class="sociallinks">
+        <nav class="socialmedia">
             <a href="https://facebook.com">
-                <img src="images/facebook.png" alt="Facebook">
+                <img src="images/facebook.png" alt="Facebook social media icon">
             </a>
 
             <a href="https://instagram.com">
-                <img src="images/instagram.png" alt="Instagram">
+                <img src="images/instagram.png" alt="Instagram social media icon">
             </a>
 
             <a href="https://linkedin.com">
-                <img src="images/linkedin.png" alt="LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn social media icon">
             </a>
         </nav>
     </footer>
